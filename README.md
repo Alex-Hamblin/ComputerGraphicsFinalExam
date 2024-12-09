@@ -3,7 +3,8 @@ Intro To Computer Graphics Final Exam
 
 Graphical enhancement of super mario world
 
-<img width="727" alt="image" src="https://github.com/user-attachments/assets/4858ca05-173f-4f2b-b6ee-f37a5acea293">
+<img width="347" alt="image" src="https://github.com/user-attachments/assets/3d19cfb3-4bb4-4dc0-96f2-e46db0e020d5">
+
 
 In this scene I used A hologram shader, a colour correction post process shader, A toon shader, and a scrolling texture, as well as a rim shader, each of these shaders have been customized for this exam. 
 
