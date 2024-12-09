@@ -102,6 +102,32 @@ return lerp(col, gradedCol, _Contribution);
 **Toon Shading:**
 
 
+The Toon shader was used in 3 different places, The Ground, The player, and one of the blocks. 
+
+The toon shader was used to replicate a 2D style with the 3D objects in the scene. I wanted to keep the look of the game similar to a 2D game while still allowing the benefits of a 3D project. This toon shader has been changed to allow the object to be affected by textures while still Applying the lighting changes affected by the Custom ramp that I Created. 
+
+The toon shader works by changing how unity assigns the brightness value of pixels on an object. By default, this is done with a gradinent, where the brightness of each pixel slowly decreases as the light affecting it decreases. With toon shading, the brightness value of each pixel is affected by The toon ramp provided and the light direction. For example in my scene the toon ramp is split into 3 different sections, each with a different brightness. The shader takes this toon ramp and applies it to the object, changing how light affects it. 
+
+float diff  = dot (s.Normal, lightDir);
+ float h = diff * 0.5 + 0.5;
+ float2 rh = h;
+ float3 ramp = tex2D(_RampTex, rh).rgb;
+
+ float4 c;
+ c.rgb = s.Albedo * _LightColor0.rgb * (ramp);
+ c.a = s.Alpha;
+ return c;
+
+
+
+(toon ramp used in this project)
+
+![toon ramp](https://github.com/user-attachments/assets/a6862646-6221-4ddc-a7dd-e8c6ee0d72d5)
+
+
+**Scrolling Texture:**
+
+
 
 
 
