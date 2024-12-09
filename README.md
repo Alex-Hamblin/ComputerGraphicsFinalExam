@@ -6,7 +6,7 @@ Graphical enhancement of super mario world
 <img width="347" alt="image" src="https://github.com/user-attachments/assets/3d19cfb3-4bb4-4dc0-96f2-e46db0e020d5">
 
 
-In this scene I used A hologram shader, a colour correction post process shader, A toon shader, and a scrolling texture, as well as a rim shader. Each of these shaders have been customized for this exam. 
+In this scene I used A hologram shader, a colour correction post process shader, A toon shader, and a scrolling texture. Each of these shaders have been customized for this exam. 
 
 I decided that the best way to show this graphical enhancement was to recreate the first part of a level in super mario world. 
 
@@ -147,6 +147,9 @@ float2 newuv = IN.uv_MainTex + float2 (_ScrollX, _ScrollY);
 float4 c = tex2D(_MainTex, newuv);
 
 float3 water = (tex2D (_MainTex, IN.uv_MainTex + float2(_ScrollX, _ScrollY))).rgb;
+
+
+
 
 
 
