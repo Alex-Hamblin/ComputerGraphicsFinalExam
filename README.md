@@ -56,6 +56,19 @@ I used colour correction on my scene to better replicate to look and visual styl
 
 
 
+There is a clear visual difference that can be seen when the colour correction is on and when it is off. 
+
+(With colour correction off)
+
+<img width="345" alt="image" src="https://github.com/user-attachments/assets/20e52d5a-9f21-4441-89f0-f9a99705f4f3">
+
+
+
+(With Colour Correction on)
+
+<img width="347" alt="image" src="https://github.com/user-attachments/assets/3d19cfb3-4bb4-4dc0-96f2-e46db0e020d5">
+
+
 
 
 
