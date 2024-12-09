@@ -240,8 +240,9 @@ GameObject:
   - component: {fileID: 488586418}
   - component: {fileID: 488586417}
   - component: {fileID: 488586416}
+  - component: {fileID: 488586420}
   m_Layer: 0
-  m_Name: Capsule
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -335,6 +336,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &488586420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 488586415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 369ac02ef53101449a7ec70b903e9fcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!43 &508069970
 Mesh:
   m_ObjectHideFlags: 0

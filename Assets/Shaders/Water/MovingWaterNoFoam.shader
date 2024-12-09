@@ -10,7 +10,7 @@ Shader "Custom/MovingWaterNoFoam"
 		_ScrollY ("Scroll Y", Range(-5, 5)) = 1
 		_myBump ("Bump Texture", 2D) = "bump" {}
 		_mySlider ("Bump Amount", Range(0,10)) = 1
-		
+		[MaterialToggle] _WaterOn("Water on", float) = 1
 		}
 
 		SubShader {
@@ -51,11 +51,12 @@ Shader "Custom/MovingWaterNoFoam"
 						}
 
 						void surf (Input IN, inout SurfaceOutput o) {
-							
+							if (_WaterOn)
+							{
 								_ScrollX *= _Time;	
 								_ScrollY *= _Time;
 								
-							
+							}
 							float2 newuv = IN.uv_MainTex + float2 (_ScrollX, _ScrollY);
 							float4 c = tex2D(_MainTex, newuv);
 							float3 water = (tex2D (_MainTex, IN.uv_MainTex + float2(_ScrollX, _ScrollY))).rgb;
