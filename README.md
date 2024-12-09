@@ -7,7 +7,8 @@ Graphical enhancement of super mario world
 
 In this scene I used A hologram shader, a colour correction post process shader, A toon shader, and a scrolling texture.
 
+I decided that the best way to show this graphical enhancement was to recreate the first part of a level in super mario world. 
 
-
+The player has the ability to move around in the level.
 
 
