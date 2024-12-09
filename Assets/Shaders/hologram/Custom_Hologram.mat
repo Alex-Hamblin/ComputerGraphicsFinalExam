@@ -36,5 +36,5 @@ Material:
     - _RimIntensity: 0
     - _RimPower: 0.5
     m_Colors:
-    - _RimColor: {r: 0, g: 1, b: 0.06334281, a: 0}
+    - _RimColor: {r: 0, g: 1, b: 0.062745094, a: 0}
   m_BuildTextureStacks: []

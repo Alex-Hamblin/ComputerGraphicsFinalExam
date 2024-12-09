@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Custom_ColorGrading
-  m_Shader: {fileID: 4800000, guid: c62fb9bb712932247994d853e2042809, type: 3}
+  m_Name: ground
+  m_Shader: {fileID: 4800000, guid: eee0926b2103e944ea23ab5d29f835fd, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -23,16 +23,22 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - _LUT:
-        m_Texture: {fileID: 2800000, guid: 710060314f7f8654faabff00649aeb9c, type: 3}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: dcce81db1013f60449e99c857f869b29, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _MainTex:
+    - _myBump:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Contribution: 0.674
-    m_Colors: []
+    - _Amp: 0.5
+    - _Freq: 3
+    - _ScrollX: 1
+    - _ScrollY: 1
+    - _Speed: 10
+    - _mySlider: 1
+    m_Colors:
+    - _Tint: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []

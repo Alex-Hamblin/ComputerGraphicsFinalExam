@@ -24,7 +24,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 88a54f7b9458eec409e95e5df0aed6d3, type: 3}
+        m_Texture: {fileID: 2800000, guid: bc0d3ff2b5557bb489cb55768a8d59b1, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _myBump:
@@ -33,12 +33,12 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Amp: 0.5
-    - _Freq: 3
-    - _ScrollX: 1
-    - _ScrollY: 1
-    - _Speed: 10
-    - _mySlider: 1
+    - _Amp: 0
+    - _Freq: 0
+    - _ScrollX: 4.45
+    - _ScrollY: 1.1
+    - _Speed: 48.5
+    - _mySlider: 0
     m_Colors:
-    - _Tint: {r: 1, g: 1, b: 1, a: 1}
+    - _Tint: {r: 0, g: 0.9379523, b: 1, a: 1}
   m_BuildTextureStacks: []
