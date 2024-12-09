@@ -7,12 +7,13 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Custom_Rim Light
-  m_Shader: {fileID: 4800000, guid: 10fbe7d1886595a42baa7785efdc7ec5, type: 3}
+  m_Name: block
+  m_Shader: {fileID: 4800000, guid: f77900dada24a6e4c804de729e9c81c7, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
-  m_InvalidKeywords: []
+  m_InvalidKeywords:
+  - _ON_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -26,10 +27,14 @@ Material:
     - _MainTex:
         m_Texture: {fileID: 2800000, guid: 10ba19c42703bd34daa8967c12a25170, type: 3}
         m_Scale: {x: 1, y: 1}
-        m_Offset: {x: -0.17, y: 0}
+        m_Offset: {x: 0, y: 0}
+    - _RampTex:
+        m_Texture: {fileID: 2800000, guid: 67609e88e1a873e40b010bd5496d6822, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _RimPower: 0.5
+    - _On: 1
     m_Colors:
-    - _RimColor: {r: 1, g: 0.8773132, b: 0, a: 0}
+    - _Color: {r: 0, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []
