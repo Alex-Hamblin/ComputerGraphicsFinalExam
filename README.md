@@ -39,6 +39,7 @@ o.Alpha = pow(rim, _RimPower);
 
 Diagram:
 
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/46e5ef33-690f-4d66-9413-7f5800db35bf">
 
 
 
