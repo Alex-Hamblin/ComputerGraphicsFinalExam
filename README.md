@@ -69,9 +69,33 @@ There is a clear visual difference that can be seen when the colour correction i
 <img width="347" alt="image" src="https://github.com/user-attachments/assets/3d19cfb3-4bb4-4dc0-96f2-e46db0e020d5">
 
 
+This colour correction shader works by calculating the scene colour offset and saturation by the values shown in the LUT. 
+It takes the scene colour based off of the screen position, and changes the colour of each pixel based off of the data given in the LUT. 
 
 
+float maxColor = COLORS - 1.0;
 
+fixed4 col = saturate(tex2D(_MainTex, i.uv));
+
+float halfColX = 0.5 / _LUT_TexelSize.z;
+
+float halfColY = 0.5 / _LUT_TexelSize.w;
+
+float threshold = maxColor / COLORS;
+
+float xOffset = halfColX + col.r * threshold /
+COLORS;
+
+float yOffset = halfColY + col.g * threshold;
+
+float cell = floor(col.b * maxColor);
+
+float2 lutPos = float2(cell / COLORS + xOffset,
+yOffset);
+
+float4 gradedCol = tex2D(_LUT, lutPos);
+
+return lerp(col, gradedCol, _Contribution);
 
 
 
