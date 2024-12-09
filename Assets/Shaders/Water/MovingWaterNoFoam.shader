@@ -63,11 +63,7 @@ Shader "Custom/MovingWaterNoFoam"
 							
 							//o.Albedo = c * IN.vertColor.rgb;
 							o.Albedo += tex2D (_MainTex, newuv);
-							//o.Normal = UnpackNormal(tex2D(_myBump, newuv));
-							//o.Normal *= float3(_mySlider,_mySlider,1);
-							float3 bnormal = UnpackNormal(tex2D(_myBump, newuv));
-							bnormal *= float3(_mySlider,_mySlider,1);
-							o.Normal += bnormal;
+							
 							}
 							ENDCG
 			}
