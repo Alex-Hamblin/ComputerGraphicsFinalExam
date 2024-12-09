@@ -1,5 +1,6 @@
 Intro To Computer Graphics Final Exam
 
+A and D to move. 
 
 Graphical enhancement of super mario world
 
