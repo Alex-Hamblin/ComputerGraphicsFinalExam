@@ -42,7 +42,20 @@ Diagram:
 
 
 
+
+
+
+
+
+**Colour correction:**
+
+
+I used colour correction on my scene to better replicate to look and visual style of super mario world. I created a custom LUT for the scene that darkened the entire scene and increased the contrast of certain objects so that they would stand out more. 
                 
+<img width="512" alt="image" src="https://github.com/user-attachments/assets/c750fd00-3399-48e3-b50c-06c55272c92a">
+
+
+
 
 
 
