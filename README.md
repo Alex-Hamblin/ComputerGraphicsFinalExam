@@ -109,13 +109,19 @@ The toon shader was used to replicate a 2D style with the 3D objects in the scen
 The toon shader works by changing how unity assigns the brightness value of pixels on an object. By default, this is done with a gradinent, where the brightness of each pixel slowly decreases as the light affecting it decreases. With toon shading, the brightness value of each pixel is affected by The toon ramp provided and the light direction. For example in my scene the toon ramp is split into 3 different sections, each with a different brightness. The shader takes this toon ramp and applies it to the object, changing how light affects it. 
 
 float diff  = dot (s.Normal, lightDir);
+
  float h = diff * 0.5 + 0.5;
+ 
  float2 rh = h;
+ 
  float3 ramp = tex2D(_RampTex, rh).rgb;
 
  float4 c;
+ 
  c.rgb = s.Albedo * _LightColor0.rgb * (ramp);
+ 
  c.a = s.Alpha;
+ 
  return c;
 
 
@@ -128,7 +134,18 @@ float diff  = dot (s.Normal, lightDir);
 **Scrolling Texture:**
 
 
+For the scrolling texture, I used it as a background element to have a more dynamic skybox, instead of just a still image in the background, it will move over time.
+The scrolling texture works by changing the vector2 position of the texture on the object by _Time, a built in unity function. 
 
+_ScrollX *= _Time;
+
+_ScrollY *= _Time;
+
+float2 newuv = IN.uv_MainTex + float2 (_ScrollX, _ScrollY);
+
+float4 c = tex2D(_MainTex, newuv);
+
+float3 water = (tex2D (_MainTex, IN.uv_MainTex + float2(_ScrollX, _ScrollY))).rgb;
 
 
 
