@@ -9,6 +9,6 @@ In this scene I used A hologram shader, a colour correction post process shader,
 
 I decided that the best way to show this graphical enhancement was to recreate the first part of a level in super mario world. 
 
-The player has the ability to move around in the level.
+The player has the ability to move around in the level. I chose to do this as i felt it was a better and more dynamic way of showing off the shaders created for this exam. 
 
 
