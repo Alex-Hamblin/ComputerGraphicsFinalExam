@@ -135,7 +135,7 @@ float diff  = dot (s.Normal, lightDir);
 
 
 For the scrolling texture, I used it as a background element to have a more dynamic skybox, instead of just a still image in the background, it will move over time.
-The scrolling texture works by changing the vector2 position of the texture on the object by _Time, a built in unity function. 
+The scrolling texture works by changing the vector2 position of the texture on the object by _Time, a built in unity function. This also uses a custom texture that I have created for this project. 
 
 _ScrollX *= _Time;
 
