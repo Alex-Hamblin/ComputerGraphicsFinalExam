@@ -27,11 +27,14 @@ The way the hologram texture works is by finding the rim of the object, this is 
 In code it would be 
 
 fixed4 c =  tex2D(_MainTex,IN.uv_MainTex);
+
 o.Albedo = c.rgb + _RimColor.rgb;
 
 
 half rim = 1.0 - saturate(dot(normalize(IN.viewDir), o.Normal));
+
 o.Emission = _RimColor.rgb * pow(rim, _RimPower) * 50 * _RimIntensity;
+
 o.Alpha = pow(rim, _RimPower); 
 
 Diagram:
